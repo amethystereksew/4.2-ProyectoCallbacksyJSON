@@ -24,3 +24,13 @@ function mostrarLibros() {
         });
     });
 }
+
+// Función para agregar un nuevo libro
+function agregarLibro(titulo, autor, genero, disponible) {
+    const nuevoLibro = { titulo, autor, genero, disponible };
+    // Aquí falta la simulación de escribir el libro en el "archivo" (es decir, agregarlo al objeto)
+    setTimeout(() => {
+        // Pista: deberías agregar el nuevo libro a `biblioteca.libros`
+    }, 1000);
+}
+
