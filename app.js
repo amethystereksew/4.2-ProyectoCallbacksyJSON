@@ -13,3 +13,14 @@ function leerDatos(callback) {
         callback(biblioteca);
     }, 1000);
 } 
+
+
+// Función para mostrar todos los libros en consola
+function mostrarLibros() {
+    leerDatos((datos) => {
+        console.log("Inventario de libros:");
+        datos.libros.forEach((libro, index) => {
+            console.log(`${index + 1}. ${libro.titulo} - ${libro.autor} (${libro.disponible ? 'Disponible' : 'Prestado'})`);
+        });
+    });
+}
