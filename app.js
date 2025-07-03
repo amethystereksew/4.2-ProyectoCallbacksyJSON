@@ -14,7 +14,6 @@ function leerDatos(callback) {
     }, 1000);
 } 
 
-
 // Función para mostrar todos los libros en consola
 function mostrarLibros() {
     leerDatos((datos) => {
@@ -30,7 +29,15 @@ function agregarLibro(titulo, autor, genero, disponible) {
     const nuevoLibro = { titulo, autor, genero, disponible };
     // Aquí falta la simulación de escribir el libro en el "archivo" (es decir, agregarlo al objeto)
     setTimeout(() => {
-        // Pista: deberías agregar el nuevo libro a `biblioteca.libros`
+        // Pista: deberías agregar el nuevo libro a "biblioteca.libros"
+    }, 1000);
+}
+
+// Función para cambiar la disponibilidad de un libro
+function actualizarDisponibilidad(titulo, nuevoEstado) {
+    // Simula un retraso antes de actualizar la disponibilidad
+    setTimeout(() => {
+        // Pista: busca el libro por título y cambia la propiedad "disponible" a nuevoEstado
     }, 1000);
 }
 
