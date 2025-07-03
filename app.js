@@ -6,3 +6,10 @@ let biblioteca = {
     ]
 };
 
+// Función para simular la lectura de datos (asimilar la lectura de un archivo JSON)
+function leerDatos(callback) {
+    setTimeout(() => {
+        // Aquí se simula leer el JSON con un retraso de 1 segundo
+        callback(biblioteca);
+    }, 1000);
+} 
